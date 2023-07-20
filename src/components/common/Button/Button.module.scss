@@ -7,7 +7,7 @@
   cursor: pointer;
   border-radius: 25px;
   border-style: solid;
-  background-color: $color-two;
+  background-color: $color-four;
   color: $color-one;
   font-size: 18px;
   font-weight: 700;
@@ -20,7 +20,7 @@
   }
 
   .icon {
-    color: $color-three;
+    color: $color-one;
     position: absolute;
     left: 50px;
     margin-top: 20px;
@@ -29,8 +29,8 @@
   }
 
   &:hover {
-    color: $color-two;
-    background-color: $color-one;
+    color: $color-one;
+    background-color: $color-two;
 
     .text {
       margin-left: 30px;

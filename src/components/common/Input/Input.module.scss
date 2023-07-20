@@ -1,0 +1,61 @@
+@import './../../../styles/settings.scss';
+
+.inputContainer {
+  position: relative;
+  margin-top: 20px;
+  width: 100%;
+
+  .inputText {
+    margin-top: 10px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    padding: 10px;
+    width: 200px;
+    border-bottom: 2px solid $color-five;
+    background-color: $color-one;
+    color: $color-two;
+  }
+
+  .focusInput::before {
+    content: attr(data-placeholder);
+    color: $color-five;
+    position: absolute;
+    margin-left: 50%;
+    left: -90px;
+    top: 18px;
+    font-size: 18px;
+    transition: top 300ms, font-size 300ms;
+    pointer-events: none;
+  }
+
+  .focusInput::after {
+    position: absolute;
+    content:'';
+    height: 2px;
+    width: 0;
+    background-color: $color-four;
+    margin-left: 50%;
+    left: -100px;
+    top: 52px;
+    transition: width 300ms;
+  }
+
+  .inputText:focus + .focusInput::before {
+    top: 0;
+    font-size: 14px;
+  }
+
+  .inputText:focus + .focusInput::after {
+    width: 200px;
+  }
+
+  .hasFocus.inputText + .focusInput::before {
+    top: 0;
+    font-size: 14px;
+  }
+
+  .hasFocus.inputText + .focusInput::after {
+    width: 200px;
+  }
+}
