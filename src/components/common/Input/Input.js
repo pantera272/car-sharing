@@ -2,15 +2,14 @@ import { useState } from 'react';
 import styles from './Input.module.scss';
 import clsx from 'clsx';
 
-const Input = ({type, name}) => {
+const Input = ({type, name, onChange}) => {
 
   const [style, setStyle] = useState(false);
 
   const addValue = (input) => {
     input === '' ? setStyle(false) : setStyle(true);
+    onChange(input);
   }
-  
-  console.log(style)
 
   return (
     <div className={styles.inputContainer}>

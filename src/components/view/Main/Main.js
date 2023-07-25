@@ -3,6 +3,7 @@ import Title from '../../common/Title/Title';
 import Button from '../../common/Button/Button';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFlagCheckered } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
 
 const icon = <FontAwesomeIcon icon={faFlagCheckered} />;
 
@@ -14,7 +15,9 @@ const Main = () => {
           <Title />
         </div>
         <div className={styles.start}>
-          <Button name='Let start' icon={icon}/>
+          <Link to='/login'>
+            <Button name='Let start' icon={icon}/>
+          </Link>
         </div>
       </div>
     </>
