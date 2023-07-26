@@ -1,7 +1,7 @@
 import styles from './ButtonSmall.module.scss';
 import clsx from 'clsx';
 
-const ButtonSmall = ({name, variant}) => {
+const ButtonSmall = ({ name, variant, action }) => {
 
   let white = false;
   let blue = false;
@@ -10,7 +10,7 @@ const ButtonSmall = ({name, variant}) => {
   variant === 'blue' ? blue = true : blue = false;
 
   return (
-    <button className={clsx(styles.buttonSmall, white && styles.variantWhite, blue && styles.variantBlue)}>{name}</button>
+    <button className={clsx(styles.buttonSmall, white && styles.variantWhite, blue && styles.variantBlue)} onClick={action}>{name}</button>
   )
 }
 

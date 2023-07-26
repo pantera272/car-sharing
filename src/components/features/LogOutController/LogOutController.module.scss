@@ -1,0 +1,33 @@
+@import '../../../styles/settings.scss';
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 80px);
+  flex-direction: column;
+  color: $color-two;
+
+  .icon {
+    font-size: 150px;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+    
+    .text {
+      font-size: 20px;
+      position: absolute;
+      color: $color-one;
+      left: 55px;
+      top: 95px;
+    }
+  }
+
+  .button {
+    margin-top: 50px;
+  }
+}

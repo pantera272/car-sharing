@@ -17,7 +17,7 @@ const LoginForm = () => {
     if (actualUser === undefined){
       console.log('nie ma takiego');
     } else {
-      localStorage.setItem('user', JSON.stringify(actualUser));
+      localStorage.setItem('usercarsharing', JSON.stringify(actualUser));
       switch (actualUser.avalibityLevel) {
         case 'user':
           navigate('/user');

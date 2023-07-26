@@ -7,7 +7,6 @@ import clsx from 'clsx';
 const WorkerListsController = () => {
 
   const workers = useSelector(state => getAllUser(state));
-  console.log(workers);
 
   return (
     <div className={styles.container}>
@@ -33,7 +32,7 @@ const WorkerListsController = () => {
                 <td className={styles.column20}>{worker.email}</td>
                 <td className={styles.column40}>
                   <ButtonSmall name='More info' variant='blue' />
-                  <ButtonSmall name='Edit' variant='blue' className={styles.buttonMargin}/>
+                  <ButtonSmall name='Edit' variant='blue' className={styles.buttonMargin} />
                   <ButtonSmall name='Remove' variant='blue' />
                 </td>
               </tr> 

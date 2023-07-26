@@ -12,14 +12,14 @@
     font-size: 18px;
     padding: 10px;
     width: 200px;
-    border-bottom: 2px solid $color-five;
+    border-bottom: 2px solid $color-three;
     background-color: $color-one;
     color: $color-two;
   }
 
   .focusInput::before {
     content: attr(data-placeholder);
-    color: $color-five;
+    color: $color-three;
     position: absolute;
     margin-left: 50%;
     left: -90px;
