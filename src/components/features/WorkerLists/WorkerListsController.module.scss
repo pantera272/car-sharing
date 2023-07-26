@@ -1,0 +1,60 @@
+@import '../../../styles/settings.scss';
+
+.container {
+  margin: 100px;
+  border-radius: 20px;
+  background-color: $color-four;
+  
+  table {
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+
+   th, td {
+      &:first-child {
+        padding-left: 20px;
+      }
+    }
+
+    th {
+      font-weight: 500;
+    }
+    
+    .last {
+      padding-left: 20px;
+    }
+  }
+
+  .tableHead { 
+    font-size: 18px;
+    color: $color-one;
+    padding: 18px 0;
+  }
+
+  .tableBody {
+    background-color: $color-one;
+    font-size: 15px;
+
+    td {
+      padding: 15px 0;
+    }
+
+    tr {
+
+      &:nth-child(2n){
+        background-color: $color-five;
+      }
+    }
+  }
+
+  .column20 {
+    width: 20%;
+  }
+
+  .colum40 {
+    width: 40%;
+  }
+}
+
+
+

@@ -1,0 +1,30 @@
+@import '../../../styles/settings.scss';
+
+.button {
+  position: relative;
+  width: 150px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  border: 3px solid $color-four;
+  color: $color-one;
+  background-color: $color-four;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 300ms;
+
+  .icon {
+    width: 100%;
+    font-size: 80px;
+    padding: 20px;
+  }
+
+  .name {
+    font-size: 24px;
+    font-weight: 500;
+  }
+
+  &:hover {
+    background-color: $color-two;
+  }
+}

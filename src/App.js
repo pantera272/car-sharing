@@ -4,6 +4,7 @@ import Login from './components/view/Login/Login';
 import Main from './components/view/Main/Main';
 import { Route, Routes } from 'react-router-dom';
 import PageNotFound from './components/view/PageNotFound/PageNotFound';
+import WorkerAdminPanel from './components/view/WorkerAdminPanel/WorkerAdminPanel';
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
       <Route path='/login' element={<Login />} />
       <Route path='/user' element={<CarSharing />} />
       <Route path='/admin' element={<AdminPanel />} />
+      <Route path='/workeradminpanel' element={<WorkerAdminPanel />} />
       <Route pant='/pagenotfound' element={<PageNotFound />} />
     </Routes>
   );

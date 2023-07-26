@@ -1,0 +1,36 @@
+@import '../../../styles/settings.scss';
+
+.buttonSmall {
+  position: relative;
+  width: 100px;
+  height: 30px;
+  cursor: pointer;
+  border-radius: 15px;
+  font-weight: 700;
+  margin-left: 20px; 
+}
+
+.variantWhite {
+  border: 2px solid $color-one;
+  background-color: $color-one;
+  color: $color-two;
+  transition: color 300ms, background-color 300ms;
+
+  &:hover {
+    color: $color-one;
+    background-color: $color-four;
+  }
+}
+
+.variantBlue {
+  border: 2px solid $color-four;
+  background-color: $color-one;
+  color: $color-two;
+  transition: color 300ms, background-color 300ms;
+
+  &:hover {
+    color: $color-one;
+    background-color: $color-four;
+  }
+}
+
